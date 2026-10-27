@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0b09">
+  <meta name="description" content="《树德里的那个夏夜》思政课主题演讲网页版">
+  <title>树德里的那个夏夜｜思政课主题演讲</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+
+  <div class="presentation" id="presentation">
+    <header class="hud" id="hud">
+      <button class="brand" type="button" data-action="home" aria-label="返回封面">
+        <span class="brand__seal">树</span>
+        <span class="brand__text">
+          <strong>树德里的那个夏夜</strong>
+          <small>1921—2026 · 主题演讲</small>
+        </span>
+      </button>
+      <div class="hud__actions">
+        <button class="hud-button" type="button" data-action="outline">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+          <span>目录</span>
+        </button>
+        <button class="hud-button" type="button" data-action="notes">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>
+          <span>演讲提示</span>
+        </button>
+        <button class="icon-button" type="button" data-action="fullscreen" aria-label="进入全屏">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M3 16v5h5"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="progress" aria-hidden="true">
+      <span id="progressBar"></span>
+    </div>
+
+    <main class="deck" id="deck">
+      <section class="slide cover is-active" data-scene="cover" data-title="封面" aria-hidden="false">
+        <img class="cover__sky" src="assets/sky.webp" alt="" aria-hidden="true">
+        <img class="cover__silk" src="assets/silk.webp" alt="" aria-hidden="true">
+        <img class="cover__doves" src="assets/doves.webp" alt="" aria-hidden="true">
+        <div class="cover__wash" aria-hidden="true"></div>
+        <div class="cover__grid" aria-hidden="true"></div>
+
+        <div class="cover__meta intro">
+          <span>思政课主题演讲</span>
+          <span class="meta-dot"></span>
+          <span>青年 · 选择 · 接续</span>
+        </div>
+
+        <div class="cover__title-wrap">
+          <p class="cover__eyebrow intro">一九二一年 · 七月三十日 · 上海</p>
+          <h1 class="cover__title">
+            <span class="cover__title-lead intro">树德里的</span>
+            <span class="cover__title-main intro">那个夏夜</span>
+          </h1>
+          <div class="cover__subline intro">
+            <span class="cover__rule"></span>
+            <p>一场平均年龄 <strong>28</strong> 岁的突围</p>
+          </div>
+        </div>
+
+        <div class="cover__age intro" aria-label="十三位代表，平均年龄二十八岁">
+          <span class="cover__age-number">28</span>
+          <span class="cover__age-copy">平均年龄<br><b>13 位代表</b></span>
+        </div>
+
+        <div class="cover__footer intro">
+          <button class="enter-button" type="button" data-action="next">
+            <span>进入故事</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="slide people" data-scene="people" data-title="他们来时，正年轻" aria-hidden="true">
+        <div class="paper-noise" aria-hidden="true"></div>
+        <div class="people__heading">
+          <p class="eyebrow intro">十三位代表 · 七个地区</p>
+          <h2 class="section-title">
+            <span class="intro">他们来时，</span>
+            <em class="intro">正年轻。</em>
+          </h2>
+          <p class="lede intro">那不是一个遥远的群像，而是一张张与台下同学相仿的面孔。</p>
+        </div>
+
+        <div class="people__portraits" aria-label="三位青年代表">
+          <article class="portrait-card step" data-name="刘仁静" data-age="19">
+            <button class="portrait-card__image" type="button" data-reveal-age aria-expanded="false" aria-label="点击揭晓刘仁静的年龄">
+              <img src="assets/portrait-liu.webp" alt="刘仁静肖像">
+              <span class="portrait-card__reveal">点击照片 · 揭晓年龄</span>
+            </button>
+            <div class="portrait-card__age" aria-hidden="true"><span>19</span><small>岁</small></div>
+            <div class="portrait-card__caption">
+              <span>刘仁静</span>
+              <small>北京大学学生 · 来自北京</small>
+            </div>
+          </article>
+          <article class="portrait-card step" data-name="邓恩铭" data-age="20">
+            <button class="portrait-card__image" type="button" data-reveal-age aria-expanded="false" aria-label="点击揭晓邓恩铭的年龄">
+              <img src="assets/portrait-deng.webp?v=2" alt="邓恩铭肖像">
+              <span class="portrait-card__reveal">点击照片 · 揭晓年龄</span>
+            </button>
+            <div class="portrait-card__age" aria-hidden="true"><span>20</span><small>岁</small></div>
+            <div class="portrait-card__caption">
+              <span>邓恩铭</span>
+              <small>从山东赶来 · 来自济南</small>
+            </div>
+          </article>
+          <article class="portrait-card step" data-name="毛泽东" data-age="28">
+            <button class="portrait-card__image" type="button" data-reveal-age aria-expanded="false" aria-label="点击揭晓毛泽东的年龄">
+              <img src="assets/portrait-mao.webp?v=2" alt="青年毛泽东肖像">
+              <span class="portrait-card__reveal">点击照片 · 揭晓年龄</span>
+            </button>
+            <div class="portrait-card__age" aria-hidden="true"><span>28</span><small>岁</small></div>
+            <div class="portrait-card__caption">
+              <span>毛泽东</span>
+              <small>青年代表 · 来自长沙</small>
+            </div>
+          </article>
+        </div>
+
+        <aside class="people__statement step">
+          <span class="vertical-label">年龄</span>
+          <p>开一次会，<br>就可能掉脑袋。<br><strong>可他们还是来了。</strong></p>
+        </aside>
+
+        <div class="people__regions intro">
+          <span>上海</span><i></i><span>北京</span><i></i><span>武汉</span><i></i>
+          <span>长沙</span><i></i><span>广州</span><i></i><span>济南</span><i></i><span>旅日</span>
+        </div>
+
+        <details class="representative-list intro">
+          <summary>查看 13 位代表</summary>
+          <p>上海：李达、李汉俊　北京：张国焘、刘仁静　武汉：董必武、陈潭秋　长沙：毛泽东、何叔衡　广州：陈公博　济南：王尽美、邓恩铭　旅日：周佛海　陈独秀指派代表：包惠僧</p>
+        </details>
+      </section>
+
+      <section class="slide chapter chapter--night" data-scene="chapter-one" data-title="第一部分：惊魂一夜" aria-hidden="true">
+        <img class="chapter__sky" src="assets/sky.webp" alt="" aria-hidden="true">
+        <img class="chapter__silk" src="assets/silk.webp" alt="" aria-hidden="true">
+        <div class="chapter__veil" aria-hidden="true"></div>
+        <div class="chapter__number intro">01</div>
+        <div class="chapter__content">
+          <p class="eyebrow eyebrow--light intro">第一部分</p>
+          <h2 class="chapter__title">
+            <span class="intro">惊魂</span>
+            <span class="intro">一夜</span>
+          </h2>
+          <p class="chapter__sub intro">一个普通的夏夜，一次不普通的闯入。</p>
+        </div>
+        <div class="chapter__beats intro" aria-label="本章叙事线索">
+          <span><b>01</b>灯下议事</span>
+          <span><b>02</b>门被推开</span>
+          <span><b>03</b>即刻撤离</span>
+        </div>
+        <div class="chapter__quote intro">“故事，从 1921 年 7 月 30 日的晚上说起。”</div>
+      </section>
+
+      <section class="slide night" data-scene="the-night" data-title="1921年7月30日" aria-hidden="true">
+        <div class="paper-noise" aria-hidden="true"></div>
+        <div class="night__content">
+          <p class="eyebrow intro">法租界 · 望志路 106 号</p>
+          <h2 class="night__title intro">
+            <span class="night__title-lead">闷热无风，</span>
+            <span class="night__title-line">一场会议正开到第六次。</span>
+          </h2>
+          <div class="night__date step">
+            <strong>1921.07.30</strong>
+            <span>晚上八点多</span>
+          </div>
+          <p class="night__body step">
+            楼下客厅里，大家围着党的纲领反复讨论。历史的指针，在这间再普通不过的房子里缓慢转动。
+          </p>
+          <blockquote class="night__quote step">
+            <span>就在这时，</span>
+            <strong>前门被推开了……</strong>
+          </blockquote>
+        </div>
+        <figure class="night__photo">
+          <img src="assets/building-106.webp" alt="望志路106号石库门建筑">
+          <figcaption>
+            <span>望志路 106 号</span>
+            <small>今兴业路 76 号</small>
+          </figcaption>
+        </figure>
+        <div class="night__index" aria-hidden="true">1921 / 07 / 30</div>
+      </section>
+
+      <section class="slide response" data-scene="response" data-title="刹那之间的决断" aria-hidden="true">
+        <img class="response__bg" src="assets/hall-meeting.webp" alt="" aria-hidden="true">
+        <div class="response__veil" aria-hidden="true"></div>
+        <div class="response__heading">
+          <p class="eyebrow eyebrow--light intro">门关上之后</p>
+          <h2 class="response__title intro">
+            <span>片刻之间，</span>
+            <strong>一个决定。</strong>
+          </h2>
+          <p class="response__lede intro">没有请示，没有表决。一次果断判断，守住了一个政党的诞生。</p>
+        </div>
+        <div class="action-track" aria-label="撤离过程的四个步骤">
+          <article class="action-card step">
+            <span class="action-card__number">01</span>
+            <div>
+              <h3>灰衫人闯入</h3>
+              <p>陌生男子未敲门径直闯入，借口寻人窥探会场文件与人员。</p>
+            </div>
+          </article>
+          <article class="action-card step">
+            <span class="action-card__number">02</span>
+            <div>
+              <h3>马林识破</h3>
+              <p>共产国际代表经验丰富，一眼识破该男子实为租界密探。</p>
+            </div>
+          </article>
+          <article class="action-card step">
+            <span class="action-card__number">03</span>
+            <div>
+              <h3>当机立断</h3>
+              <p>立刻休会撤离，一分钟都不耽误，展现非凡魄力。</p>
+            </div>
+          </article>
+          <article class="action-card step">
+            <span class="action-card__number">04</span>
+            <div>
+              <h3>后门撤离</h3>
+              <p>迅速收起文件、熄灯闭门，代表沉着从后门隐入弄堂。</p>
+            </div>
+          </article>
+        </div>
+        <p class="response__whisper intro">门外，脚步声越来越近。</p>
+      </section>
+
+      <section class="slide aftermath" data-scene="aftermath" data-title="火种没有熄灭" aria-hidden="true">
+        <div class="paper-noise" aria-hidden="true"></div>
+        <header class="aftermath__heading">
+          <p class="eyebrow intro">从石库门，到南湖红船</p>
+          <h2 class="section-title">
+            <span class="intro">火种，</span>
+            <em class="intro">没有熄灭。</em>
+          </h2>
+        </header>
+        <div class="aftermath__panels">
+          <article class="story-panel step">
+            <div class="story-panel__image">
+              <img src="assets/raid.webp" alt="法租界巡捕搜查会场影像">
+              <span class="story-panel__index">01</span>
+            </div>
+            <div class="story-panel__copy">
+              <h3>巡捕包围</h3>
+              <p>十几分钟后，一队法租界巡捕荷枪实弹冲入，整栋石库门被严密封锁搜查。</p>
+            </div>
+          </article>
+          <article class="story-panel step">
+            <div class="story-panel__image">
+              <img src="assets/li-hanjun.webp" alt="李汉俊沉着应对巡捕盘问影像">
+              <span class="story-panel__index">02</span>
+            </div>
+            <div class="story-panel__copy">
+              <h3>李汉俊周旋</h3>
+              <p>他神色平静，沉着应对盘问，严密掩护参会代表，巧妙化解危机。</p>
+            </div>
+          </article>
+          <article class="story-panel step">
+            <div class="story-panel__image">
+              <img src="assets/red-boat-scene.webp" alt="南湖红船会议影像">
+              <span class="story-panel__index">03</span>
+            </div>
+            <div class="story-panel__copy">
+              <h3>南湖红船</h3>
+              <p>代表们转移嘉兴南湖，租下画舫，在游船上完成最后议程。</p>
+            </div>
+          </article>
+        </div>
+        <div class="aftermath__route intro" aria-label="会议转移路线">
+          <div class="route-node">
+            <small>起点 · 险中撤离</small>
+            <strong>上海 · 石库门</strong>
+          </div>
+          <div class="route-line" aria-hidden="true">
+            <span>秘密转移</span>
+          </div>
+          <div class="route-node route-node--end">
+            <small>续章 · 完成议程</small>
+            <strong>嘉兴 · 南湖</strong>
+          </div>
+        </div>
+        <div class="aftermath__conclusion intro">
+          <span>诞生在石库门</span>
+          <i></i>
+          <span>完成在红船上</span>
+          <strong>中国共产党，正式宣告诞生。</strong>
+        </div>
+      </section>
+
+      <section class="slide film" data-scene="film" data-title="回到现场：影像资料" aria-hidden="true">
+        <div class="film__backdrop" aria-hidden="true"></div>
+        <div class="film__heading">
+          <p class="eyebrow eyebrow--light intro">影像资料</p>
+          <h2 class="film__title intro">回到那个夜晚</h2>
+          <p class="film__lede intro">让我们穿过时间，感受这场惊心动魄的中共一大会议。</p>
+        </div>
+        <div class="film__player step">
+          <video id="meetingVideo" controls playsinline preload="metadata" poster="assets/hall-meeting.webp">
+            <source src="assets/meeting-film.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+          </video>
+          <span class="film__corner film__corner--one" aria-hidden="true"></span>
+          <span class="film__corner film__corner--two" aria-hidden="true"></span>
+        </div>
+        <p class="film__tip intro">点击播放 · 观看结束后按 → 继续</p>
+      </section>
+
+      <section class="slide chapter chapter--day" data-scene="chapter-two" data-title="第二部分：历史必然" aria-hidden="true">
+        <div class="paper-noise" aria-hidden="true"></div>
+        <img class="chapter__sky" src="assets/sky.webp" alt="" aria-hidden="true">
+        <img class="chapter__silk" src="assets/silk.webp" alt="" aria-hidden="true">
+        <div class="chapter__veil chapter__veil--day" aria-hidden="true"></div>
+        <div class="chapter__number intro">02</div>
+        <div class="chapter__content">
+          <p class="eyebrow intro">第二部分</p>
+          <h2 class="chapter__title chapter__title--ink">
+            <span class="intro">历史必然</span>
+          </h2>
+          <p class="chapter__question intro">为什么是上海？</p>
+        </div>
+        <div class="chapter__beats chapter__beats--ink intro" aria-label="本章分析维度">
+          <span><b>01</b>阶级基础</span>
+          <span><b>02</b>思想阵地</span>
+          <span><b>03</b>空间政治</span>
+        </div>
+        <div class="chapter__quote chapter__quote--ink intro">“偶然的夏夜背后，是历史积蓄已久的力量。”</div>
+      </section>
+
+      <section class="slide reasons" data-scene="reasons" data-title="为什么是上海？" aria-hidden="true">
+        <div class="paper-noise" aria-hidden="true"></div>
+        <header class="reasons__heading">
+          <p class="eyebrow intro">三个维度 · 一个建筑细节</p>
+          <h2 class="section-title">
+            <span class="intro">为什么，</span>
+            <em class="intro">偏偏是上海？</em>
+          </h2>
+          <p class="lede intro">这座城市的阶级、思想、空间与建筑，共同完成了一次历史的托举。</p>
+        </header>
+        <div class="reason-grid">
+          <article class="reason-card step" data-mark="基">
+            <span class="reason-card__glyph">工</span>
+            <div class="reason-card__number">01</div>
+            <h3>阶级基础</h3>
+            <p>近代中国工业最发达的城市，数十万产业工人集聚，为马克思主义提供了最坚实的阶级力量。</p>
+            <small class="reason-card__tag">产业与人</small>
+          </article>
+          <article class="reason-card step" data-mark="思">
+            <span class="reason-card__glyph">新</span>
+            <div class="reason-card__number">02</div>
+            <h3>思想阵地</h3>
+            <p>《新青年》在沪出版，《共产党宣言》首个中文全译本在沪出版，建党早期联络中心也在这里。</p>
+            <small class="reason-card__tag">书刊与传播</small>
+          </article>
+          <article class="reason-card step" data-mark="衡">
+            <span class="reason-card__glyph">界</span>
+            <div class="reason-card__number">03</div>
+            <h3>空间政治</h3>
+            <p>公共租界、法租界与华界三方管辖交错，留下了统治力量相对薄弱的缝隙。</p>
+            <small class="reason-card__tag">管辖与缝隙</small>
+          </article>
+          <article class="reason-card step" data-mark="门">
+            <span class="reason-card__glyph">弄</span>
+            <div class="reason-card__number">04</div>
+            <h3>石库门结构</h3>
+            <p>里弄住宅如迷宫，前门通街、后门连弄，遇有险情便于人员迅速分散。</p>
+            <small class="reason-card__tag">进退与疏散</small>
+          </article>
+        </div>
+        <div class="reasons__summary intro">
+          <span>不是偶然</span>
+          <strong>而是条件汇聚成必然。</strong>
+        </div>
+        <p class="reasons__aside intro">不是一座孤立的房子，<br>而是一整套历史条件。</p>
+      </section>
+
+      <section class="slide selection" data-scene="selection" data-title="历史选择了上海" aria-hidden="true">
+        <div class="paper-noise" aria-hidden="true"></div>
+        <div class="selection__copy">
+          <p class="eyebrow intro">从条件，到行动</p>
+          <h2 class="section-title">
+            <span class="intro">历史选择了</span>
+            <em class="intro">上海。</em>
+          </h2>
+          <ul class="selection__list">
+            <li class="step"><span>01</span>有工人阶级的基础</li>
+            <li class="step"><span>02</span>有先进思想的阵地</li>
+            <li class="step"><span>03</span>有可以周旋的缝隙</li>
+            <li class="step"><span>04</span>还有一座撤得出去的房子</li>
+          </ul>
+          <p class="selection__closing step">让条件变成现实的，<br>是一群<strong>敢于行动的年轻人。</strong></p>
+        </div>
+        <p class="selection__note intro">“空间不是背景，<br>而是行动的一部分。”</p>
+        <figure class="plan-card">
+          <div class="plan-card__header">
+            <span>石库门空间示意</span>
+            <small>EVACUATION ROUTE</small>
+          </div>
+          <div class="plan-card__canvas">
+            <img src="assets/floorplan-core.webp" alt="放大的石库门住宅平面图">
+            <svg class="plan-route" viewBox="0 0 1010 1468" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <defs>
+                <filter id="routeGlow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="9" result="blur"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+                <marker id="routeArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                </marker>
+              </defs>
+              <path class="plan-room-highlight" d="M 195 735 L 548 735 L 548 1050 L 195 1050 Z"></path>
+              <path
+                class="plan-route__glow"
+                d="M 360 875 C 455 875 510 852 558 820 C 585 803 593 770 595 730 C 600 635 587 548 574 470 C 560 385 542 302 531 238 C 523 190 521 162 520 140"
+              ></path>
+              <path
+                class="plan-route__path"
+                marker-end="url(#routeArrow)"
+                d="M 360 875 C 455 875 510 852 558 820 C 585 803 593 770 595 730 C 600 635 587 548 574 470 C 560 385 542 302 531 238 C 523 190 521 162 520 140"
+              ></path>
+              <circle class="plan-route__pulse" cx="360" cy="875" r="24"></circle>
+              <circle class="plan-route__start" cx="360" cy="875" r="9"></circle>
+              <circle class="plan-route__exit" cx="520" cy="140" r="10"></circle>
+              <g class="plan-route__labels">
+                <text x="220" y="770" class="plan-route__label plan-route__label--meeting">
+                  <tspan x="220" dy="0">会议房间</tspan>
+                  <tspan x="220" dy="1.18em">106号一楼客厅</tspan>
+                </text>
+                <text x="630" y="548" class="plan-route__label">撤离方向示意</text>
+                <text x="616" y="160" class="plan-route__label plan-route__label--exit">后门 · 连弄</text>
+                <text x="580" y="1238" class="plan-route__label plan-route__label--front">前门 · 通街</text>
+              </g>
+            </svg>
+          </div>
+          <figcaption>
+            <span>红色路径为方向示意，不代表唯一史料记载</span>
+            <strong>会议房间 → 后方弄堂</strong>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="slide chapter chapter--echo" data-scene="chapter-three" data-title="第三部分：时代回响" aria-hidden="true">
+        <img class="chapter__sky" src="assets/sky.webp" alt="" aria-hidden="true">
+        <img class="chapter__silk" src="assets/silk.webp" alt="" aria-hidden="true">
+        <div class="chapter__veil chapter__veil--echo" aria-hidden="true"></div>
+        <div class="chapter__number intro">03</div>
+        <div class="chapter__content">
+          <p class="eyebrow eyebrow--light intro">第三部分</p>
+          <h2 class="chapter__title">
+            <span class="intro">时代</span>
+            <span class="intro">回响</span>
+          </h2>
+          <p class="chapter__sub intro">一百多年后的今天，这簇火仍在回答。</p>
+        </div>
+        <div class="chapter__beats intro" aria-label="本章关键词">
+          <span><b>01</b>旧街新声</span>
+          <span><b>02</b>青年选择</span>
+          <span><b>03</b>火种接续</span>
+        </div>
+        <div class="chapter__quote intro">“他们不是来打卡历史的，他们是来创造历史的。”</div>
+      </section>
+
+      <section class="slide two-times" data-scene="two-times" data-title="一条街，两种时间" aria-hidden="true">
+        <header class="two-times__heading">
+          <p class="eyebrow eyebrow--light intro">今天的兴业路 76 号</p>
+          <h2 class="two-times__title intro">
+            <span>一条街，</span>
+            <strong>两种时间。</strong>
+          </h2>
+        </header>
+        <div class="time-pair">
+          <figure class="time-panel step">
+            <img src="assets/xintiandi.webp" alt="新天地的霓虹与繁华">
+            <figcaption>
+              <small>今天</small>
+              <strong>霓虹与繁华</strong>
+            </figcaption>
+          </figure>
+          <div class="time-pair__seam" aria-hidden="true">
+            <span>一街之隔</span>
+          </div>
+          <figure class="time-panel time-panel--right step">
+            <img src="assets/yixing-road.webp" alt="兴业路76号青砖与红砖">
+            <figcaption>
+              <small>1921</small>
+              <strong>青砖与红砖</strong>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="century-mark intro" aria-label="一百零五年只隔一条街">
+          <strong>105</strong>
+          <span>年，只隔一条街</span>
+        </div>
+        <div class="two-times__statement intro">
+          <span>他们把青春留在夏夜</span>
+          <i></i>
+          <strong>我们把答案写在今天</strong>
+        </div>
+      </section>
+
+      <section class="slide legacy" data-scene="legacy" data-title="历史是用来接续的" aria-hidden="true">
+        <img class="legacy__image" src="assets/nanhu-boat.webp" alt="南湖红船">
+        <div class="legacy__wash" aria-hidden="true"></div>
+        <div class="legacy__content">
+          <p class="eyebrow eyebrow--light intro">时代回响</p>
+          <blockquote>
+            <span class="intro">“历史不是用来瞻仰的，</span>
+            <strong class="intro">是用来接续的。”</strong>
+          </blockquote>
+          <p class="legacy__body intro">
+            一百零五年前，青年在树德里的夏夜点亮火种；<br>
+            今天，轮到我们，让它继续燃烧。
+          </p>
+          <div class="legacy__signature intro">
+            <span>1921</span>
+            <i></i>
+            <span>今天</span>
+          </div>
+          <div class="legacy__echo intro" aria-label="青年、选择、接续">
+            <span><b>01</b>青年</span>
+            <span><b>02</b>选择</span>
+            <span><b>03</b>接续</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide closing" data-scene="closing" data-title="演讲结束" aria-hidden="true">
+        <img class="closing__sky" src="assets/sky.webp" alt="" aria-hidden="true">
+        <img class="closing__silk" src="assets/silk.webp" alt="" aria-hidden="true">
+        <img class="closing__doves" src="assets/doves.webp" alt="" aria-hidden="true">
+        <div class="closing__wash" aria-hidden="true"></div>
+        <div class="closing__content">
+          <p class="eyebrow eyebrow--light intro">愿这簇火，由我们接续</p>
+          <h2>
+            <span class="intro">演讲结束</span>
+            <strong class="intro">感谢聆听</strong>
+          </h2>
+          <p class="closing__meta intro">树德里的那个夏夜 · 1921—2026</p>
+        </div>
+        <button class="restart-button intro" type="button" data-action="restart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.7M4 4v6h6"/></svg>
+          从头再看
+        </button>
+        <p class="closing__thanks intro">谢谢大家</p>
+      </section>
+    </main>
+
+    <footer class="controls" id="controls">
+      <div class="controls__left">
+        <span class="scene-counter"><b id="sceneCurrent">01</b><span>/</span><span id="sceneTotal">14</span></span>
+        <span class="scene-name" id="sceneName">封面</span>
+      </div>
+      <div class="controls__center">
+        <button class="navigation-button" type="button" data-action="prev" aria-label="上一页">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M10 7l-5 5 5 5"/></svg>
+        </button>
+        <button class="continue-button" type="button" data-action="next">
+          <span id="nextLabel">进入故事</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5"/></svg>
+        </button>
+      </div>
+      <div class="controls__right">
+        <button class="keyboard-hint" type="button" data-action="help" aria-label="查看键盘快捷键">
+          <kbd>←</kbd><kbd>→</kbd><span>翻页</span>
+        </button>
+        <span class="step-indicator" id="stepIndicator" aria-live="polite"></span>
+      </div>
+    </footer>
+
+    <div class="announcer sr-only" id="announcer" aria-live="polite"></div>
+  </div>
+
+  <div class="overlay" id="outlineOverlay" aria-hidden="true">
+    <div class="overlay__backdrop" data-close-overlay></div>
+    <section class="outline-panel" role="dialog" aria-modal="true" aria-labelledby="outlineTitle">
+      <header class="panel-header">
+        <div>
+          <p class="eyebrow">章节导航</p>
+          <h2 id="outlineTitle">十四幕叙事</h2>
+        </div>
+        <button class="close-button" type="button" data-close-overlay aria-label="关闭目录">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="outline-grid" id="outlineGrid"></div>
+    </section>
+  </div>
+
+  <aside class="notes-panel" id="notesPanel" aria-hidden="true" aria-labelledby="notesTitle">
+    <div class="notes-panel__top">
+      <span class="notes-panel__kicker">提示</span>
+      <button class="close-button close-button--light" type="button" data-close-notes aria-label="关闭演讲提示">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <p class="eyebrow eyebrow--light">本页演讲提示</p>
+    <h2 id="notesTitle">封面</h2>
+    <p class="notes-panel__cue" id="notesCue"></p>
+    <div class="notes-panel__body" id="notesBody"></div>
+    <p class="notes-panel__shortcut">按 <kbd>N</kbd> 关闭提示</p>
+  </aside>
+
+  <div class="help-modal" id="helpModal" aria-hidden="true">
+    <div class="overlay__backdrop" data-close-help></div>
+    <section class="help-card" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <button class="close-button" type="button" data-close-help aria-label="关闭快捷键说明">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <p class="eyebrow">演示快捷键</p>
+      <h2 id="helpTitle">像幻灯片一样操作</h2>
+      <div class="shortcut-grid">
+        <div><kbd>→</kbd><kbd>Space</kbd><span>继续 / 揭示下一步</span></div>
+        <div><kbd>←</kbd><span>返回</span></div>
+        <div><kbd>N</kbd><span>演讲提示</span></div>
+        <div><kbd>O</kbd><span>章节目录</span></div>
+        <div><kbd>F</kbd><span>全屏演示</span></div>
+        <div><kbd>Esc</kbd><span>关闭面板</span></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
